@@ -16,12 +16,21 @@ main {
 @media only screen and (max-width:375px) {
     main {
         display: block;
-        margin: 10% 5% 10% 5%;
+        margin: 10% 6% 10% 6%;
     }
 
     article {
         margin-bottom: 20px;
     }
+
+    .art-1 {
+        background-color: hsl(263, 55%, 52%);
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        color: white;
+    }
+
 }
 
 article {
@@ -55,6 +64,9 @@ header p {
 
 .art-1 {
     background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
     color: white;
     grid-area: 1 / 1 / 2 / 3;
 }
