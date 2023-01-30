@@ -3,6 +3,7 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     margin: 0;
+    
 }
 
 main {
@@ -12,27 +13,6 @@ main {
     grid-template-rows: repeat(2, 1fr);
     margin: 5% 12% 5% 12%;
 }
-
-@media only screen and (max-width:375px) {
-    main {
-        display: block;
-        margin: 10% 6% 10% 6%;
-    }
-
-    article {
-        margin-bottom: 20px;
-    }
-
-    .art-1 {
-        background-color: hsl(263, 55%, 52%);
-        background-image: url(images/bg-pattern-quotation.svg);
-        background-repeat: no-repeat;
-        background-position-x: 90%;
-        color: white;
-    }
-
-}
-
 article {
     border-radius: 10px;
     padding: 30px;
@@ -44,7 +24,6 @@ header img {
     float: left;
     border: 2px solid #555;
 }
-
 header p {
     font-size: 11px;
     margin: 0;
@@ -55,12 +34,9 @@ header p {
 .verified {
     opacity: 50%;
 }
-
 .review {
     opacity: 70%;
 }
-
-
 
 .art-1 {
     background-color: hsl(263, 55%, 52%);
@@ -93,5 +69,26 @@ header p {
     background-color: hsl(0, 0%, 100%);
     color: hsl(217, 19%, 35%);
     grid-area: 1 / 4 / 3 / 5;
+
+}
+
+@media (max-width:800px) {
+    main {
+        display: block;
+        margin: 10% 6% 10% 6%;
+    }
+
+    article {
+        margin-bottom: 20px;
+        min-width: 220px;
+    }
+
+    .art-1 {
+        background-color: hsl(263, 55%, 52%);
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        color: white;
+    }
 
 }
